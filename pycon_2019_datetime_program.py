@@ -1,10 +1,10 @@
-from datetime import date 
+from datetime import date
 
 
 def print_header():
     print("--------------------------------------")
     print("    PYCON 2019 DATETIME 100DoC APP")
-    print("-------------------------------------------------")
+    print("--------------------------------------")
     print()
 
 
@@ -25,31 +25,23 @@ def calculate_timedelta(start_date, end_date):
 def print_flight_information(days):
     if days < 0:
         print(
-            "I hope you already made your flight to PYCON 2019! You should have flown out {} days ago!".format(
-                -days
-            )
+            f"I hope you already made your flight to PYCON 2019! You should have flown out {-days} days ago!"
         )
     elif days == 1:
         print(
-            "Get your bags packed today if they aren't already! Your flight to PYCON 2019 is tomorrow! That's only {} day!".format(
-                days
-            )
+            f"Get your bags packed today if they aren't already! Your flight to PYCON 2019 is tomorrow! That's only {days} day!"
         )
     elif days > 0 and days < 7:
         print(
-            "Get your bags packed soon! Your flight to PYCON 2019 is in {} days!".format(
-                days
-            )
+            f"Get your bags packed soon! Your flight to PYCON 2019 is in {days} days!"
         )
     elif days > 0:
         print(
-            "Spend some time writing Python before you pack your bags. Your flight to PYCON 2019 isn't for another {} days.".format(
-                days
-            )
+            f"Spend some time writing Python before you pack your bags. Your flight to PYCON 2019 isn't for another {days} days."
         )
     else:
         print(
-            "I hope you already packed your bags! Your fly out to PYCON 2019 is today! See you there!!!"
+            "I hope you already packed your bags! Your flight out to PYCON 2019 is today! See you there!!!"
         )
 
 
